@@ -13,82 +13,103 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-      <fieldset>
+      <fieldset class="group">
         <legend>Personal information</legend>
         <label class="field-label">
           <div class="field">
-            Surname: <input
-            type="text"
-            name="surname"
-            autocomplete="off">
+            Surname:
+            <input
+              type="text"
+              name="surname"
+              autocomplete="off"
+            >
           </div>
         </label>
         <label class="field-label">
           <div class="field">
-            Name: <input
-            type="text"
-            name="name"
-            autocomplete="off">
+            Name:
+            <input
+              type="text"
+              name="name"
+              autocomplete="off"
+            >
           </div>
         </label>
         <label class="field-label">
           <div class="field">
-            How old are You? <input
-            type="number"
-            name="age"
-            min="1"
-            max="100"
-            value="12">
+            How old are You?
+            <input
+              type="number"
+              name="age"
+              min="1"
+              max="100"
+              value="12"
+            >
           </div>
         </label>
         <label class="field-label">
           <div class="field">
             Full date of birth:
-            <input type="date"
-            name="date">
+            <input
+              type="date"
+              name="date"
+            >
           </div>
         </label>
         <label class="field-label">
           <div class="field">
-          I accept the term of the agreement <input type="checkbox" name="terms">
+            I accept the term of the agreement
+            <input
+              type="checkbox"
+              name="terms"
+            >
           </div>
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="group">
         <legend>Registration</legend>
         <label class="field-lable">
           <div class="field">
-            E-mail: <input
-            type="email"
-            name="email"
-            required
-            placeholder="email@example.com">
+            E-mail:
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="email@example.com"
+            >
           </div>
         </label>
         <label class="field-label">
           <div class="field">
-            Password: <input
-            type="password"
-            name="password"
-            required
-            minlength="8"
-            maxlength="32">
+            Password:
+            <input
+              type="password"
+              name="password"
+              required
+              minlength="8"
+              maxlength="32"
+            >
           </div>
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="group">
         <legend>An interesting fact about you!</legend>
         <div class="field">
-          Do you love cats? <input
-          type="radio"
-          name="cats"
-          id="yes"
-          value="y"><label for="yes">Yes</label>
+          Do you love cats?
           <input
-          type="radio"
-          name="cats"
-          id="no"
-          value="n"> <label for="no">No</label>
+            type="radio"
+            name="cats"
+            id="yes"
+            value="y"
+          >
+          <label for="yes">Yes</label>
+          <input
+            type="radio"
+            name="cats"
+            id="no"
+            value="n"
+          >
+          <label for="no">No</label>
         </div>
         <label>
           <div class="field">
@@ -116,7 +137,7 @@
           </div>
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="group">
         <legend>Additional info:</legend>
         <label>
           <div class="field">
@@ -133,7 +154,7 @@
           </div>
         </label>
       </fieldset>
-      <input type="submit">
+      <input type="submit" value="Submit">
     </form>
   </body>
 
